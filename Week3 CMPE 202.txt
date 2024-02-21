@@ -1,0 +1,62 @@
+Consider a basketball conference. Each conference has exactly 10 teams. 
+Each team has 12 players. Each player has a specific height, speed, and accuracy. 
+Players know which team they belong to. 
+Some players are scholarship players.
+Scholarship players need to record their current grade-point average. 
+Players may be transferred between teams. 
+Teams play basketball games against other teams in the conference. 
+
+The result of each game is determined using a function based 
+on the height, strength, speed, and accuracy of the players on each team. 
+Design a system for simulating this basketball conference. 
+
+
+Requirements for application #1 Who? What ? Why?
+
+Who ? Sportsfan
+Whatt ?
+View Team Standings
+View Game Schedule
+View Team Profile
+View Head to head records against other teams in the conf
+
+----------------------------------------------
+
+Why? For recruiting players-
+Who? coaches/TeamManager
+What?: Add Player, TransferPlayers, View List of Teams,
+View update my team roster, rank player in my team,
+View Player profile, (game record and acad record for school players)
+View Team stats/scarecard view game schedules,
+View Schedule by date (Shows all games for that date for all teams)
+
+a. Draw a UML class diagram. In the diagram,  
+Identify the classes and for each class, 
+list the attributes and operations (no need for getters and setters)
+ identify the types of relationship between the classes and multiplicities. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================
+Conference, Team, Player, Game, ScholarshipPlayer, Schedule (for the conference)
+Conference to Team: Association 1 to 10
+Team to Player: Association 1 to 12
+Game to Team: Association:  Many to 2 : * to 2
+For each Game there are 2 teams
+For team they play many games (past, current, Future)
+ScholarshipPlayer to Player: Inheritance assuming there may be more customization for a SchPlayer
+transfer() - method used to add to one team and remove from another team object
+result() method in Game class
+
