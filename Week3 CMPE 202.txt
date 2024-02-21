@@ -1,3 +1,5 @@
+Example
+
 Consider a basketball conference. Each conference has exactly 10 teams. 
 Each team has 12 players. Each player has a specific height, speed, and accuracy. 
 Players know which team they belong to. 
